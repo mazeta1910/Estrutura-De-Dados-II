@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "itemFilaEnc.h"
+int main()
+{
+    Fila *f;
+    int vazia, chave;
+    
+    printf("Criando fila encadeada vazia:\n");
+    f = criaFilaVazia();
+    vazia = verificaFilaVazia(f);
+    printf("Fila vazia?%d\n", vazia);
+    return 0;
+}

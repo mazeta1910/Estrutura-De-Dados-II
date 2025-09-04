@@ -1,0 +1,27 @@
+Estruturas Encadeadas:
+
+Vantagens:
+- Flexibilidade: tamanho pode crescer e diminuir dinamicamente
+- Eficiência em inserções e remoções (não precisa realocar ou deslocar elementos)
+Desvantagens: 
+- Acesso sequencial (não possui acesso por índice)
+- Consome mais memória pois armazena ponteiros além de dados
+- Maior complexidade para serem implementadas
+
+Arranjos:
+Vantagens:
+- Acesso direto a qualquer indice
+- Menor consumo de memória
+- Implementação simples
+
+Desvantagens:
+- Tamanho fixo
+- Ineficiência em inserções e remoções pois vc precisa realocar e deslocar os elementos
+
+-----------------------------------------------
+
+– arquivo.h: somente os typedefs, protótipos de funções, variáveis globais…
+– arquivo.c: structs e funções.
+– usa_tad.c: o arquivo que conterá a função main e usará as funcionalidades do TAD.
+
+-----------------------------------------------
