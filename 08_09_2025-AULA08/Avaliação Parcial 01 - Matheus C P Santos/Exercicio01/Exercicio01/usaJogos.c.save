@@ -1,0 +1,135 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "jogos.h"
+#include <locale.h>
+
+int main()
+{
+    setlocale(LC_ALL, "Portuguese");
+    Lista* listaJogos = criaLista();
+    Lista* listaFinalizados = NULL;
+    int opcao, ano;
+    char nome[100], plataforma[20], estado[20], codigo[6];
+
+    do
+    {
+        printf("\n=== MENU JOGOS DIGITAIS ===\n");
+        printf("1 - Inserir novo jogo\n");
+        printf("2 - Excluir jogo\n");
+        printf("3 - Buscar jogo\n");
+        printf("4 - Imprimir todos os jogos\n");
+        printf("5 - Copiar jogos finalizados\n");
+        printf("6 - Sair\n");
+        printf("Escolha uma opcao: ");
+        scanf("%d", &opcao);
+
+        switch(opcao)
+        {
+            case 1:
+                printf("Digite o nome do jogo: ");
+                scanf(" %[^\n]", nome);
+
+                printf("Escolha a plataforma:\n");
+                printf("1 - PC\n");
+                printf("2 - PS5\n");
+                printf("3 - Xbox\n");
+                printf("4 - Switch\n");
+                printf("5 - Mobile\n");
+                printf("Opcao: ");
+                int opcao_plataforma;
+                scanf("%d", &opcaoPlataforma);
+
+                switch(opcaoPlataforma)
+                {
+                    case 1: strcpy(plataforma, "PC"); break;
+                    case 2: strcpy(plataforma, "PS5"); break;
+                    case 3: strcpy(plataforma, "Xbox"); break;
+                    case 4: strcpy(plataforma, "Switch"); break;
+                    case 5: strcpy(plataforma, "Mobile"); break;
+                    default:
+                        printf("Opcao invalida! Usando PC como padrao.\n");
+                        strcpy(plataforma, "PC");
+                        break;
+                }
+
+                printf("Digite o ano de lancamento: ");
+                if (scanf("%d", &ano) != 1) {
+                    printf("Erro: Digite apenas numeros para o ano!\n");
+                    while(getchar() != '\n'); // Limpa o buffer
+                    break;
+                }
+
+                printf("Escolha o estado:\n");
+                printf("1 - Finalizado\n");
+                printf("2 - Jogando\n");
+                printf("3 - Por jogar\n");
+                printf("Opcao: ");
+                int opcao_estado;
+                scanf("%d", &opcao_estado);
+
+                switch(opcao_estado)
+                {
+                    case 1: strcpy(estado, "Finalizado"); break;
+                    case 2: strcpy(estado, "Jogando"); break;
+                    case 3: strcpy(estado, "Por jogar"); break;
+                    default:
+                        printf("Opcao invalida! Usando 'Por jogar' como padrao.\n");
+                        strcpy(estado, "Por jogar");
+                        break;
+                }
+
+                insereLista(listaJogos, nome, plataforma, ano, estado);
+                break;
+
+            case 2:
+                printf("Digite o codigo do jogo a ser removido: ");
+                scanf(" %[^\n]", codigo);
+                removeLista(listaJogos, codigo);
+                break;
+
+            case 3:
+                printf("Digite o codigo do jogo a ser buscado: ");
+                scanf(" %[^\n]", codigo);
+                if(buscaLista(listaJogos, codigo))
+                {
+                    printf("Jogo encontrado!\n");
+                }
+                else
+                {
+                    printf("Jogo nao encontrado!\n");
+                }
+                break;
+
+            case 4:
+                imprimeLista(listaJogos);
+                break;
+
+            case 5:
+                if(listaFinalizados != NULL)
+                {
+                    liberaLista(listaFinalizados);
+                }
+                listaFinalizados = copiaFinalizados(listaJogos);
+                printf("Lista de jogos finalizados criada!\n");
+                imprimeLista(listaFinalizados);
+                break;
+
+            case 6:
+                printf("Saindo...\n");
+                break;
+
+            default:
+                printf("Opcao invalida!\n");
+        }
+    } while(opcao != 6);
+
+    liberaLista(listaJogos);
+    if(listaFinalizados != NULL)
+    {
+        liberaLista(listaFinalizados);
+    }
+
+    return 0;
+}
+

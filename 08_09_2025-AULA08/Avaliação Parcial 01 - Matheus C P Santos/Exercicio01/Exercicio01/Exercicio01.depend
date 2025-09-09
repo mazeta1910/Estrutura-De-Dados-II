@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1757371296 source:c:\users\mathe\onedrive\documentos\faculdade\estrutura de dados ii\estrutura-de-dados-ii\08_09_2025-aula08\avaliação parcial 01 - matheus c p santos\exercicio01\exercicio01\jogos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"jogos.h"
+
+1757370802 c:\users\mathe\onedrive\documentos\faculdade\estrutura de dados ii\estrutura-de-dados-ii\08_09_2025-aula08\avaliação parcial 01 - matheus c p santos\exercicio01\exercicio01\jogos.h
+
+1757369023 source:c:\users\mathe\onedrive\documentos\faculdade\estrutura de dados ii\estrutura-de-dados-ii\08_09_2025-aula08\avaliação parcial 01 - matheus c p santos\exercicio01\exercicio01\usa_jogos.c
+	<stdio.h>
+	<stdlib.h>
+	"jogos.h"
+	<locale.h>
+
+1757371401 source:c:\users\mathe\onedrive\documentos\faculdade\estrutura de dados ii\estrutura-de-dados-ii\08_09_2025-aula08\avaliação parcial 01 - matheus c p santos\exercicio01\exercicio01\usajogos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"jogos.h"
+	<locale.h>
+
