@@ -1,0 +1,14 @@
+#ifndef PRJQUESTAO02_H_INCLUDED
+#define PRJQUESTAO02_H_INCLUDED
+
+// Declaração da typedef da struct lista
+typedef struct lista Lista;
+
+// Protótipos de funções
+Lista *criarLista(void);
+void listaInserirFim(Lista* l, int valor);
+void listaConcatenar(Lista* l1, Lista* l2); // Concatena l2 no final de l1 e esvazia l2, transferindo todos os seus nós.
+void listaImprimir (Lista *l);
+void listaLiberar (Lista *l);
+
+#endif // PRJQUESTAO02_H_INCLUDED

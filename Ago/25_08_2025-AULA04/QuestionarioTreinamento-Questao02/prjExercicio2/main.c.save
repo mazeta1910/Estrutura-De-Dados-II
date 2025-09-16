@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include "prjQuestao02.h"
+
+int main() {
+    // Cria duas listas
+    Lista* lista1 = listaCriar();
+    Lista* lista2 = listaCriar();
+
+    // Insere elementos na primeira lista
+    listaInserirFim(lista1, 10);
+    listaInserirFim(lista1, 20);
+    listaInserirFim(lista1, 30);
+
+    // Insere elementos na segunda lista
+    listaInserirFim(lista2, 40);
+    listaInserirFim(lista2, 50);
+    listaInserirFim(lista2, 60);
+
+    // Imprime as listas originais
+    printf("Antes da concatenação:\n");
+    lista_imprimir(lista1);
+    lista_imprimir(lista2);
+
+    // Concatena lista2 no final de lista1
+    lista_concatenar(lista1, lista2);
+
+    // Imprime o resultado
+    printf("\nDepois da concatenação:\n");
+    lista_imprimir(lista1);
+    lista_imprimir(lista2);  // lista2 deve estar vazia
+
+    // Libera a memória
+    lista_liberar(lista1);
+    lista_liberar(lista2);
+
+    return 0;
+}
