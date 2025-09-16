@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1756162681 source:c:\users\mathe\onedrive\documentos\faculdade\estrutura de dados ii\25_08_2025-aula04\questionariotreinamento-questao02\prjexercicio2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"prjQuestao02.h"
+
+1756162978 c:\users\mathe\onedrive\documentos\faculdade\estrutura de dados ii\25_08_2025-aula04\questionariotreinamento-questao02\prjexercicio2\prjquestao02.h
+
+1756163163 source:c:\users\mathe\onedrive\documentos\faculdade\estrutura de dados ii\25_08_2025-aula04\questionariotreinamento-questao02\prjexercicio2\prjquestao02.c
+	<stdio.h>
+	<stdlib.h>
+	"prjQuestao02.h"
+

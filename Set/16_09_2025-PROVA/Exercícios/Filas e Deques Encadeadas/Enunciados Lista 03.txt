@@ -1,0 +1,20 @@
+1) Escreva uma função que recebe uma fila encadeada que guarda n números inteiros e verifica se a fila está ordenada (ordem crescente).
+
+2) Utilize uma estrutura TAD de fila encadeada para representar um sistema para controlar os chamados de suporte recebidos por uma empresa de Informática.
+Considere que a struct a ser criada para armazenar os dados deve ser nomeada com o SEUNOME e deve ter pelo menos três campos referentes a dados dos chamados, sendo um deles o nome do usuário.
+Crie um programa que simula a criação, inclusão, exclusão e impressão dos dados dos chamados, sendo cadastrados pelo menos quatro registros de contatos.
+
+3) Considere que você recebeu a incumbência de desenvolver um jornal digital (newsletter) interno com notícias da empresa em que trabalha. Novidades, lançamentos, e conteúdos diversos de interesse dos funcionários podem ser indicados para inclusão nesse jornal. Assim, fazendo uso dos conteúdos estudados até o momento sobre estruturas de dados encadeadas, escolha uma estrutura que permita a inclusão de notícias no jornal, por ordem de recebimento, e também inclusão prioritária antes das existentes. Após armazenamento das notícias desejadas na estrutura de dados escolhida, deve ser possível ao usuário realizar a remoção do primeiro e do último elemento armazenado. Para isso faça:
+Identifique a estrutura de dados encadeada mais adequada para atender ao que foi solicitado.
+Crie um TAD com funções básicas (criação, inclusão, remoção, impressão, destruição) que permitam a manutenção de notícias para o jornal, armazenando na struct correspondente pelo menos quatro campos que julguem importantes, de tipos de dados numérico e textual. É obrigatório a inclusão de um campo que permita identificar a classificação da notícia (Ex.: Esporte, Política, Cultura, entre outros).
+Apresente ao usuário um menu para interação com o TAD desenvolvido, permitindo a inclusão de notícias, impressão e remoção (início e final).
+Crie uma função para calcular a quantidade de notícias cadastradas por classificação, e o percentual correspondente à classificação com maior número de notícias.
+
+4) Você está trabalhando em uma grande companhia que atua na área de recursos naturais. Usando imagens de satélite, a companhia deseja fazer um inventário de todas as árvores em uma determinada região, utilizando um deque para armazenar os dados das árvores.
+
+Para isso faça:
+Use como entrada para o problema o número de árvores na região mapeada e o código da espécie de cada árvore detectada. 
+Calcule e apresente a porcentagem em que cada espécie de árvore aparece na região.
+Mostre qual é o código da espécie mais frequente.
+Ao percorrer os códigos de entrada, quando encontrar o código de uma espécie que já está armazenada na estrutura, em vez de armazená-la novamente, incremente um campo de quantidade no item.
+Considere que o programa deve permitir a remoção do último cadastro inserido (opção de desfazer), e nesse caso, precisa verificar se é necessário atualizar as quantidades já armazenadas de uma determinada espécie na mesma região.

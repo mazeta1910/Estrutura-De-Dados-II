@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1636067900 source:d:\_utfpr\disciplinas\estrutura_de_dados\aulas\2021_2\2021_11_04\prjlistaduplencadeada\main.c
+	<stdio.h>
+	<stdlib.h>
+	"itemListaDuplEnc.h"
+
+1636067943 d:\_utfpr\disciplinas\estrutura_de_dados\aulas\2021_2\2021_11_04\prjlistaduplencadeada\itemlistaduplenc.h
+

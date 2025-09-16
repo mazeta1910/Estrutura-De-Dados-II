@@ -1,8 +1,0 @@
-# depslib dependency file v1.0
-1755652777 source:c:\users\mathe\onedrive\documentos\faculdade\estrutura de dados ii\19_08_2025-aula03\prjpilhaenc\main.c
-	<stdio.h>
-	<stdlib.h>
-	"itemPilhaEnc.h"
-
-1755652778 c:\users\mathe\onedrive\documentos\faculdade\estrutura de dados ii\19_08_2025-aula03\prjpilhaenc\itempilhaenc.h
-

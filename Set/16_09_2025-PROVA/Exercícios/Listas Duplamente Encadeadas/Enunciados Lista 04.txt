@@ -1,0 +1,13 @@
+1) Considerando uma lista duplamente encadeada, escreva uma função que recebe uma lista e duas chaves. A função deve ser capaz de encontrar as células que correspondem às chaves (se existirem) e então trocá-las de lugar. 
+
+2) Escreva uma função para inserir itens em uma lista duplamente encadeada de forma ordenada.
+
+3) Escreva uma função para inverter os itens de uma lista duplamente encadeada (sem utilizar lista auxiliar). Ex.:
+•    Lista original: 15, 20, 30, 40, 80
+•    Lista invertida: 80, 40, 30, 20, 15
+
+4)Uma agenda telefônica é armazenada como uma lista duplamente encadeada. Um item desta agenda é apresentado abaixo:
+Adapte o seu TAD lista para trabalhar com o item acima, e também faça o que é pedido:
+1.    A função insere() deve inserir elementos de forma que estes permaneçam ordenados em ordem crescente de telefone;
+2.    A função remove(char nome[]) deve apagar elementos baseado no nome do contato;
+3.    Crie uma função imprime_contato(char nome[]) que encontra um contato com um certo nome e imprime seus dados na tela, ou então mostra uma mensagem informando que o contato não foi encontrado.

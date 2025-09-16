@@ -1,0 +1,11 @@
+1) Escreva uma função que recebe 3 pilhas encadeadas, sendo que a primeira guarda n números inteiros e a segunda e a terceira estão vazias.
+A função deve preencher a segunda pilha com todos os números pares encontrados na primeira pilha, e deve preencher a terceira pilha com todos os números ímpares encontrados na primeira pilha.
+
+2) Escreva uma função para remoção de nós duplicados (com mesma chave) em uma pilha encadeada, manipulando apenas o topo.
+Uma pilha auxiliar pode ser utilizada. Exemplo:
+Pilha inicial: 0, 1, 2, 2, 3, 4, 8, 9, 9
+Pilha sem duplicados: 0, 1, 2, 3, 4, 8, 9
+
+3)Utilize uma estrutura TAD de pilha encadeada para representar um sistema para cadastrar convênios disponíveis a sócios de uma organização.
+Considere que a struct a ser criada para armazenar os dados deve ser nomeada com o SEUNOME e deve ter campos referentes ao nome da empresa, área de atuação e desconto para associados.
+Crie um programa que simula a criação, inclusão, exclusão e impressão dos dados sugeridos, sendo cadastrados pelo menos quatro registros de convênios.

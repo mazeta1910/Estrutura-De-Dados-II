@@ -1,0 +1,7 @@
+1) Cite as vantagens e desvantagens das estruturas encadeadas em relação às estruturas implementadas por meio de arranjos (estáticas).
+
+2) Escreva uma função que recebe duas listas encadeadas e concatena as duas (liga a segunda lista no final da primeira lista).
+
+3) Escreva uma função que recebe duas listas. A primeira guarda n números inteiros e a segunda está vazia. A função deve inserir os elementos da primeira lista na segunda lista, de maneira ordenada.
+
+4) Exercício da lista telefônica.

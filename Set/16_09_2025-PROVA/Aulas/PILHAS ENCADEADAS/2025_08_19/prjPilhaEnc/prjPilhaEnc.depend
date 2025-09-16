@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1755651784 source:c:\_dados\_utfpr\disciplinas\_estruturas_de_dados_2\aulas\2025_2\2025_08_19\prjpilhaenc\itempilhaenc.c
+	<stdio.h>
+	<stdlib.h>
+	"itemPilhaEnc.h"
+
+1755651751 c:\_dados\_utfpr\disciplinas\_estruturas_de_dados_2\aulas\2025_2\2025_08_19\prjpilhaenc\itempilhaenc.h
+
